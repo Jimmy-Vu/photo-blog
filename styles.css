@@ -1,12 +1,11 @@
-html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 header, footer {
-  max-width: 95%;
-  margin: auto 1.2em;
+  width: 95%;
 }
 
 a {
@@ -14,38 +13,55 @@ a {
 }
 
 a:visited {
-  color: blue;
+  color: black
+}
+
+nav a:visited {
+  color: black;
+}
+
+.fa-github-square {
+  font-size: 2em;
 }
 
 .display-flex {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .justify-center {
   justify-content: center;
 }
 
-.justify-around {
-  justify-content: space-around;
+.justify-between {
+  justify-content: space-between;
 }
 
 .container {
-  width: 95%;
+  width: 90%;
 }
 
 .row {
   flex-wrap: wrap;
-  margin-bottom: 3em;
 }
 
 .site-name {
+  font-size: 2em;
   padding-bottom: .5em;
-  border-bottom: 1px solid grey;
+  border-bottom: 2px solid grey;
 }
 
 .image-container {
   height: 600px;
   width: 90%;
+  margin-bottom: 2em;
+}
+
+.image-collection{
+  justify-content: center;
 }
 
 .display-image {
@@ -55,7 +71,14 @@ a:visited {
   border: 1px solid black
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 501px) {
+  .image-collection{
+  justify-content: space-between;
+  }
+
+  .site-name {
+    width: 48%;
+  }
   .image-container {
     height: 600px;
     width: 45%;
@@ -69,13 +92,17 @@ a:visited {
 }
 
 @media screen and (min-width: 1000px) {
-.site-name {
-  width: 32%;
-}
+  .image-collection{
+  justify-content: space-between;
+  }
+
+  .site-name {
+    width: 30%;
+  }
 
   .image-container {
-    height: 600px;
-    width: 30%;
+    height: 660px;
+    width: 32%;
   }
 
   .display-image {
