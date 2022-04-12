@@ -4,10 +4,6 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-header, footer {
-  width: 95%;
-}
-
 a {
   text-decoration: none;
 }
@@ -32,6 +28,10 @@ nav a:visited {
   flex-direction: column;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -44,7 +44,7 @@ nav a:visited {
   width: 90%;
 }
 
-.row {
+.flex-wrap {
   flex-wrap: wrap;
 }
 
@@ -71,13 +71,43 @@ nav a:visited {
   border: 1px solid black
 }
 
+#flex-change-btn {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0;
+  outline: none;
+  width: 7em;
+  height: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+}
+
+#flex-change-btn:hover {
+  box-shadow: #222222 0 0 0 1px;
+  transition: box-shadow .2s;
+}
+#flex-change-btn:active {
+  background-color: #F7F7F7;
+  border-color: black;
+  transform: scale(.96);
+}
+
 @media screen and (min-width: 501px) {
   .image-collection{
   justify-content: space-between;
   }
 
   .site-name {
-    width: 48%;
+    width: 45%;
   }
   .image-container {
     height: 600px;
@@ -97,7 +127,7 @@ nav a:visited {
   }
 
   .site-name {
-    width: 30%;
+    width: 32%;
   }
 
   .image-container {
